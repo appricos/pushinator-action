@@ -1,6 +1,6 @@
 # Pushinator GitHub Action
 
-This custom GitHub Action sends a push notification to a specified channel using the Pushinator API.
+A GitHub Action to **send a push notification to your devices** via Pushinator API.
 
 ## Example Workflow
 
@@ -26,9 +26,14 @@ jobs:
 
 ## Steps to Get Started
 
-- Visit [Pushinator's website](https://pushinator.com) and create an account.
-- Log in to your account and create a new notification channel.
-- Note down the Channel ID and the Pushinator API token by clicking the `Channel API (for developers)` button.
-- Download and install the Pushinator app on your devices from the [App Store](https://apps.apple.com/us/app/pushinator/id6477758210) or [Google Play](https://play.google.com/store/apps/details?id=com.apprikos.pushinator).
-- Use the QR code provided in the Pushinator dashboard to subscribe your devices to the newly created channel.
-- Use the example workflow above to configure and trigger notifications using this GitHub Action.
+1. Create a [Pushinator](https://pushinator.com) account
+2. Set up a notification channel and save the Channel ID and API token
+3. Download the app from the [App Store](https://apps.apple.com/us/app/pushinator/id6477758210) or [Google Play](https://play.google.com/store/apps/details?id=com.apprikos.pushinator) to all devices you want to get notifications on
+4. Use the QR code in the dashboard to subscribe your devices to the channel
+5. Use the example workflow provided to set up and trigger notifications
+
+
+
+
+
+
