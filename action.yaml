@@ -1,5 +1,5 @@
-name: 'Pushinator action'
-description: 'Send a push notification to your devices'
+name: 'Send Push Notification | Pushinator'
+description: 'Send a push notification to your devices via Pushinator'
 inputs:
   channelId:
     description: 'The ID of the channel to send the notification to'
