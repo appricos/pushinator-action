@@ -7,11 +7,11 @@ async function run() {
     const notification = core.getInput('notification', { required: true });
 
     const payload = {
-      channel: channelId,
-      notification: notification,
+      channel_id: channelId,
+      content: notification,
     };
 
-    const response = await fetch('https://api.pushinator.com/api/v1/send_notification', {
+    const response = await fetch('https://api.pushinator.com/api/v2/notifications/send', {
       method: 'POST',
       headers: {
         Authorization: `Bearer ${apiToken}`,
