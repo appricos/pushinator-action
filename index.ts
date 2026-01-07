@@ -5,11 +5,18 @@ async function run() {
     const apiToken = core.getInput('apiToken', { required: true });
     const channelId = core.getInput('channelId', { required: true });
     const notification = core.getInput('notification', { required: true });
+    const acknowledgmentRequired = core.getInput('acknowledgmentRequired');
+
 
     const payload = {
       channel_id: channelId,
       content: notification,
+      acknowledgment_required: false,
     };
+
+    if (acknowledgmentRequired && acknowledgmentRequired.toLowerCase() === 'true') {
+      payload.acknowledgment_required = true;
+    }
 
     const response = await fetch('https://api.pushinator.com/api/v2/notifications/send', {
       method: 'POST',

@@ -10,6 +10,8 @@ inputs:
   notification:
     description: 'The notification to send'
     required: true
+  acknowledgmentRequired:
+    description: 'Whether acknowledgment is enabled for the notification. Treated as false for non-paid accounts.'
 
 outputs:
   result:
